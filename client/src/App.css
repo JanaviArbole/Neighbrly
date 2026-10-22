@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #202820;
+  background: #fbfaf7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  min-height: 84px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eae9e2;
+  background: #fbfaf7;
+}
+
+.brand {
+  font-family: 'Manrope', sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.brand span {
+  color: #66845b;
+}
+
+.nav-link {
+  color: #586254;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #66845b;
+}
+
+.hero {
+  padding: 110px 24px 120px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% 5%, #e9efdf 0%, transparent 62%),
+    #fbfaf7;
+}
+
+.eyebrow {
+  margin: 0 0 24px;
+  color: #66845b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(40px, 6.5vw, 76px);
+  font-weight: 800;
+  line-height: 1.13;
+  letter-spacing: -3.5px;
+}
+
+.hero h1 span {
+  color: #66845b;
+}
+
+.hero-description {
+  max-width: 550px;
+  margin: 26px auto 32px;
+  color: #71786d;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background: #66845b;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.primary-button:hover {
+  background: #4e6c44;
+  transform: translateY(-2px);
+}
+
+.about {
+  padding: 76px 24px 90px;
+  text-align: center;
+  background: white;
+}
+
+.about h2 {
+  margin: 0 0 16px;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(25px, 4vw, 38px);
+  letter-spacing: -1px;
+}
+
+.about p {
+  max-width: 580px;
+  margin: 0 auto;
+  color: #71786d;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.footer {
+  padding: 26px 20px;
+  border-top: 1px solid #eae9e2;
+  color: #777d73;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    min-height: 72px;
+    padding: 0 22px;
+  }
+
+  .brand {
+    font-size: 25px;
+  }
+
+  .hero {
+    padding: 85px 22px 90px;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .about {
+    padding: 60px 22px 70px;
+  }
+}
